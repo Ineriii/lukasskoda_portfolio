@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plaster&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: rgb(255, 255, 255);
+    --secondary: rgb(0, 0, 0);
+
+    --roboto: 'Roboto', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --bodoni: 'Bodoni Moda', serif;
+
+    --spacing: 1rem; /* Base spacing unit */
+}
+
+body {
+    background: url('../images/sunlight-shining-single-mountain-top-sunset-with-dark-cloudy-sky.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+header {
+    position: relative;
+    top: 0;
+}
+
+footer {
+    font-family: var(--bodoni);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.footertext {
+    opacity: 0.75;
+    text-transform: uppercase;
+}
+
+.copyright {
+    opacity: 0.5;
+    font-size: 0.875rem; /* Small font size */
+    font-family: var(--roboto);
+}
+
+.followme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.followmeimg {
+    max-width: 2rem;
+    opacity: 0.75;
+}
+
+.navigationlinks {
+    text-decoration: none;
+}
+
+.imglinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.navigationbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: var(--bodoni);
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.navlinks{
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem); /* Responsive font size */
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.name {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.aboutme {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    max-width: 50rem;
+    margin: auto;
+    font-family: var(--montserrat);
+    padding: 1rem;
+}
+
+.navlinks:hover {
+    opacity: 0.75;
+}
+
+
+
+.home {
+    gap: 1.5rem;
+    margin: 3rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    font-family: var(--bodoni);
+    font-size: clamp(3rem, 5vw, 6.25rem); /* Responsive font size */
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.introduction {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    max-width: 50rem; /* 1352px */
+    margin: auto;
+    font-family: var(--montserrat);
+    padding: 1rem;
+}
+
+.galleryimages {
+    border-radius: 5px; /* 20px */
+    width: clamp(10rem, 25vw, 45rem); /* Responsive width */
+    height: clamp(15rem, 35vw, 55rem); /* Responsive height */
+    object-fit: cover;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
+    transition: all 0.3s ease;
+    animation: appear 5s linear 1; /* Animation for appearance, runs once */
+    animation-timeline: view();
+    animation-range: entry cover 40%;
+}
+
+.galleryimages:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2); /* 20px */
+}
+
+.gallery {
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.CV {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: large;
+    font-family: var(--bodoni);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem; /* 10px */
+    border: none;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0.625rem; /* 10px */
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    border-radius: 50px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 0.625rem; /* 10px */
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    border-radius: 3.125rem; /* 50px */
+    width: 21.875rem; /* 350px */
+}
+
+textarea {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 0.625rem; /* 10px */
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    border-radius: 3.125rem; /* 50px */
+    width: 21.875rem; /* 350px */
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .navigationbar {
+        width: 75%;
+    }
+}

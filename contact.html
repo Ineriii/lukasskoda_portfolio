@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <header>
+        <ul class="navigationbar">
+            <li class="navigation"><a class="navlinks" href="index.html">Home</a></li>
+            <li class="navigation"><a class="navlinks" href="aboutme.html">About Me</a></li>
+            <li class="navigation"><a class="navlinks" href="mywork.html">My work</a></li>
+            <li class="navigation"><a class="navlinks" href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    
+    <main class="contact">
+        <h1>Contact Me</h1>
+
+        <section class="contact-form">
+            
+            <form method="post">
+                <input type="text" id="name" name="name" required placeholder="Name"><br>
+
+                <input type="email" id="email" name="email" required placeholder="Email"><br>
+
+                <textarea  id="message" name="message" rows="1" required placeholder="Your message"></textarea><br>
+
+                <button class="send" type="submit"><img src="assets/images/send icon.svg" alt="send"></button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="followme">
+            <p class="footertext">Follow me on</p>
+            <div class="imglinks">
+                <a class="followmelinks" href="https://github.com/Ineriii" target="_blank"><img class="followmeimg" src="assets/images/github.svg" alt="GitHub"></a>
+                <a class="followmelinks" href="https://www.instagram.com/ineriii/" target="_blank"><img class="followmeimg" src="assets/images/instagram.png" alt="Instagram"></a>
+                <a class="followmelinks" href="" target="_blank"><img class="followmeimg" src="assets/images/tiktok.svg" alt="TikTok"></a>
+            </div>
+        </div>
+        <p class="copyright">©<span id="currentYear"></span> Lukáš Škoda</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
