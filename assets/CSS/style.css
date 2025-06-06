@@ -154,7 +154,7 @@ h1 {
     object-fit: cover;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
     transition: all 0.3s ease;
-    animation: appear 5s linear 1; /* Animation for appearance, runs once */
+    animation: appear 5s linear; /* Animation for appearance, runs once */
     animation-timeline: view();
     animation-range: entry cover 40%;
 }
@@ -205,30 +205,29 @@ input {
     text-align: center;
     margin: auto;
     padding: 0.625rem; /* 10px */
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 1rem;
     background-color: var(--primary);
     color: var(--secondary);
+    font-family: var(--montserrat);
     border: none;
     border-radius: 3.125rem; /* 50px */
-    width: 21.875rem; /* 350px */
+    width: clamp(15rem, 50vw, 30rem);
 }
 
-textarea {
+#message {
+    width: clamp(15rem, 50vw, 30rem);
     display: flex;
     justify-content: center;
     text-align: center;
     margin: auto;
     padding: 0.625rem; /* 10px */
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 1rem;
     background-color: var(--primary);
     color: var(--secondary);
     border: none;
-    border-radius: 3.125rem; /* 50px */
-    width: 21.875rem; /* 350px */
+    font-family: var(--montserrat);
+    border-radius: 50px;
+    
 }
 
 @keyframes appear {
